@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    --color1: #FFF ;
+    --color2: #181818 ;
+}
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 12px 20px;
+}
+
+.logo img {
+	width: 20em;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu li {
+	padding: 20px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-right: 4em;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 3em;
+    display: none;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+#check {display: none;}
+@media(max-width: 1400px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~
+ .menu {right: 0;}
+}
+
+.voorpagina {
+	display: grid;
+	background-image: url(../images/18fc4-slider-bg-1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	grid-template-rows: 50% 50%;
+}
+
+.voorpagina {
+	display: grid;
+	color: whitesmoke;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 1fr;
+}
+
+.tekstvoorpagina a {
+    background-color: #181818;
+    font-size: 0.8vw;
+    padding: 1.5vw;
+}
+
+.tekstvoorpagina {
+	grid-area: 1 / 1;
+	padding: 10vw;
+}
+
+.tekstvoorpagina h1 {
+	font-size: 3vw;
+}
+
+.tekstvoorpagina p {
+	font-size: 1vw;
+    margin-bottom: 4em;
+}
+
+.plaatjesvoorpagina {
+	grid-area: 1 / 2;
+}
+
+.plaatjesvoorpagina img {
+	display: grid;
+	grid-template-columns:  50vw;
+	grid-template-rows: 50vw;
+    margin: 5vw;
+}
+
+.monitor {
+	grid-area: 1 / 2 / 1 / 2;
+	width: 30vw;
+}
+
+.search {
+	grid-area: 1 / 2 / 1 / 2;
+}
+
+.paper {
+	grid-area: 1 / 2 / 1 / 2;
+}
+
+.cloud {
+	grid-area: 1 / 2 / 1 / 2;
+}
+
+.levelup {
+	grid-area: 1 / 2 / 1 / 2;
+}
+
+.speaker {
+	grid-area: 1 / 2 / 1 / 2;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20em 20em 20em;
+    margin-top: 5vw;
+    margin-bottom: 15vw;
+	margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 20px;
+}
+
+.info img {
+    display: grid;
+    margin-left: 15vw;
+    grid-column-start: 2 ;
+    grid-column-end: 3 ;
+    grid-row-end: 2 ;
+    grid-row-end: 3 ;
+    width: 24vw;
+}
+
+.info p {
+    font-size: 1.115vw;
+}
+
+.info h2 {
+    font-size: 2vw;
+}
+
+
+.info1 {
+    display: grid;
+    grid-column-start: 1 ;
+    grid-column-end: 2 ;
+    grid-row-end: 1 ;
+    grid-row-end: 2 ;
+    margin: 1vw;
+}
+
+.info2 {
+    display: grid;
+    grid-column-start: 1 ;
+    grid-column-end: 2 ;
+    grid-row-end: 2 ;
+    grid-row-end: 3 ;
+    margin: 1vw;
+}
+
+.info3 {
+    display: grid;
+    grid-column-start: 1 ;
+    grid-column-end: 2 ;
+    grid-row-end: 3 ;
+    grid-row-end: 4 ;
+    margin: 1vw;
+}
+
+.form {
+	background-color: darkblue;
+	color: white;
+	padding-top: 3em;
+	padding-bottom: 1em;
+}
+
+.form h3 {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0.5em;
+}
+
+.form h4 {
+	display: flex;
+	justify-content: center;
+}
+
+.form a {
+	display: flex;
+	justify-content: center;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+.diensten {
+	margin: 1em;
+}
+
+.werkproces {
+	margin: 1em;
+}
+
+footer {
+	margin: 1em;
+}
+
+footer ul {
+	list-style: none;
+}
