@@ -41,6 +41,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home  
+  <img src="../readme-images/Screenshot 2023-12-04 at 18.26.55.png" width="375px" alt="screenshot small screen van homepagina">
   <img src="readme-images/Screenshot 2023-12-04 at 18.26.55.png" width="375px" alt="screenshot small screen van homepagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
